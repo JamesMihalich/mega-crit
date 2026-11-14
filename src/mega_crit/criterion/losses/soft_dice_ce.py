@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 
-from criterion.losses.soft_dice import SoftDiceLoss
+from .soft_dice import SoftDiceLoss
 
 
 class SoftDiceCELoss(nn.Module):

@@ -1,13 +1,14 @@
 import torch
 from torch import nn
 
-from criterion.losses.soft_dice import SoftDiceLoss
-from criterion.losses.soft_dice_ce import SoftDiceCELoss
-from criterion.losses.nacl import NACLLoss
-from criterion.losses.svls import SVLSLoss
-from criterion.losses.svls_dsc import SVLSDiceLoss
+from .criterion.losses.soft_dice import SoftDiceLoss
+from .criterion.losses.soft_dice_ce import SoftDiceCELoss
+from .criterion.losses.nacl import NACLLoss
+from .criterion.losses.svls import SVLSLoss
+from .criterion.losses.svls_dsc import SVLSDiceLoss
+from .criterion.losses.htls import HTLS
 
-from criterion.metrics.hard_dice import HardDice
+from .criterion.metrics.hard_dice import HardDice
 
 
 CRITERION_REGISTRY = {
@@ -17,7 +18,7 @@ CRITERION_REGISTRY = {
     "svls": SVLSLoss,
     "svls_dsc": SVLSDiceLoss,
     "hard_dice": HardDice,
-    "htls" : 
+    "htls": HTLS,
 }
 
 

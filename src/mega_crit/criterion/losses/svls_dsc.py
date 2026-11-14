@@ -3,8 +3,9 @@ import math
 import torch
 import torch.nn.functional as F
 from torch import nn
-from criteron.losses.soft_dice import SoftDiceLoss
-from criteron.losses.svls import SVLSLoss
+
+from .soft_dice import SoftDiceLoss
+from .svls import SVLSLoss
 
 
 class SVLSDiceLoss(nn.Module):
