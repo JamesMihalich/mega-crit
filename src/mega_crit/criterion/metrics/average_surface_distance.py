@@ -11,7 +11,7 @@ class AverageSurfaceDistance(nn.Module):
     https://github.com/google-deepmind/surface-distance/blob/master/surface_distance/metrics.py
 
     ASD returns a tuple, presenting the average distance from gt to pred, and the average
-    distance from pred to gt
+    distance from pred to gt.
     """
 
     def __init__(self, percentage: float, spacing: tuple):
